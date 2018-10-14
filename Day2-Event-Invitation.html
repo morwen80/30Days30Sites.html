@@ -1,61 +1,128 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Day 2/30 - Event Invitation</title>
 </head>
 
 
 <style>
-  html, body {
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+
+html, body {
   color: #6d6161;
   height: 100%;
   line-height: 1.8;
+  font-family: Montserrat, sans-serif;
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-3, {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/* First image (Logo. Full height) */
+/* First image (Main) */
 .bgimg-1 {
-    background-image: url('http://valeriaragonese.altervista.org/images/bgs/christmas01.jpg');
-    min-height: 550px;
+        background-image: url("http://valeriaragonese.altervista.org/images/bgs/christmas01.jpg");
+    min-height: 500px;
 }
 
-/* Second image (Portfolio) */
-.bgimg-2 {
-    background-image: url("/w3images/parallax2.jpg");
-    min-height: 550px;
-}
 
-/* Third image (Contact) */
+/* Third image (The Event) */
 .bgimg-3 {
-    background-image: url("/w3images/parallax3.jpg");
+    background-image: url("http://valeriaragonese.altervista.org/images/bgs/christmas03.jpg");
     min-height: 550px;
 }
-
-
-.intro {
-  padding: .7rem;
-  text-transform: uppercase;
+iframe{
+  min-height: 550px;
+  width: 100%;
+}
+#hello {
+  width: 100%;
+  padding: 0px 20px;
+  margin: 0 auto;
   text-align: center;
-  letter-spacing: .3rem;
+  height: 400px;
+}
+#hello p {
+  padding-top: 7rem;
+  font-size: 4rem;
+  color: #fff;
+  line-height: 5rem;
+  font-weight: 600;
+  text-shadow: 2px 2px #6d6161;
+}
+.section {
+  padding: 2rem;
 }
 
+h1 {
+  text-align: center;
+  font-family: Lora, serif;
+}
+h2 {
+  font-weight: 900;
+}
+.opening {
+  padding-top: 3rem;
+}
+.name {
+  width: 100%;
+}
+.opening img {
+  width: 250px;
+}
+#reserve {
+  color: #bc4242;
+}
+i {
+  font-size: 1.5rem;
+}
+.gift {
+  padding-top: 2.5rem;
+  text-align: center;
 
+}
+#perks {
+    padding: 0 2rem 2rem 3rem;
+  margin-left: 2rem;
+}
+.desc {
+  font-size: .8rem;
+}
 
+.form {
+ margin-left: 3rem;
+  text-align: center;
+  background-color: #6d6161;
+  color: #fff;
+  padding: 1.5rem;
+}
+
+input, textarea {
+  width: 90%;
+  margin-top: .6rem;
+  border: 1px solid grey;
+  padding-left: .3rem;
+}
+
+#where hr {
+  width: 70%;
+}
+footer {
+  text-align: center;
+  font-size: .8rem;
+}
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -70,46 +137,107 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid"></div>
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-
+  <div class="container-fluid">
+  <a class="navbar-brand" href="#">Christmas 365</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#the-event">The Event</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#where">Where are we</a>
+      </li>
+      
+    </ul>
+  </div>
+    </div><!--container-->
+</nav>
+ 
+  
   <!-- First Parallax Image with Logo Text -->
-  <div class="bgimg-1" id="home">
-    <div class="carousel-caption">
-      <button type="button" class="btn btn-secondary intro">WELCOME TO OUR STORE</button>
+<div class="bgimg-1">
+  <div id="hello">
+    <p>GRAND OPENING<br>
+      2 November 2018
+    </p></div>
+</div>
+
+  
+  <div class="section container" id="about">
+    <h1>Christmas is here</h1>
+    <hr>
+    It's <b>always</b> "that special time of the year", here at Christmas 365.
+    <br>
+    Our acclaimed pop-up store has found is permanent location in Oxfor Street, London.
+    <br>
+    Join us for our grand opening if you wish to browse everything (and we mean, EVERYTHING) Christmassy.
+      <div class="row opening">
+    <div class="col-4">
+      <img src="https://s3.amazonaws.com/tesla-media/speaker_media/asset/23800/large_23800.jpg">
+     
     </div>
+    <div class="col-6 guest">
+       <div class="name">
+        <h2>Special Guest</h2>
+        <h3>Richard Paul Evans</h3>
+         <hr>
+         The author will present his new Christmas novel, <strong>The Noel Stranger</strong>.
+         <br><a href="#" id="reserve">Reserve a seat</a> for his reading session.
+       
+      </div>
+    </div>
+        
+  </div>
   </div>
 
-  <div class="section section1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Purus ut faucibus pulvinar elementum. Ac placerat vestibulum lectus
-    mauris ultrices. Nisl nisi scelerisque eu ultrices vitae auctor eu augue ut. Natoque penatibus et magnis dis.
-    Purus non enim praesent elementum facilisis leo vel. Orci eu lobortis elementum nibh tellus molestie. Posuere ac
-    ut consequat semper viverra nam libero justo laoreet. Imperdiet dui accumsan sit amet nulla. Mi quis hendrerit
-    dolor magna. In hac habitasse platea dictumst quisque sagittis purus sit amet. Auctor neque vitae tempus quam.
-    Pretium fusce id velit ut tortor. Rhoncus dolor purus non enim praesent elementum facilisis leo. Tempus iaculis
-    urna id volutpat.</div>
 
+  <!-- Secod Parallax Image with Logo Text -->
+<div class="bgimg-3" id="the-event">
   </div>
-  <!--container-->
+
+<div class="section container-fluid second">
+  <div class="row gift">
+    <div class="col-3" id="perks">
+      <i class="fas fa-gift"></i>
+      <div class="desc">Pre-order your gifts for a magical Christmas stress-free</div>
+      <hr>
+      <i class="fas fa-coffee"></i>
+      <div class="desc">Enjoy a hot cocoa in our deluxe cafeteria</div>
+      <hr>
+      <i class="fas fa-cut"></i>
+      <div class="desc">Early-bird discounts for those who join us on opening day</div>
+    </div>
+    
+    <div class="col-7 form">
+      <h3>Confirm your Attendance</h3>
+      <input placeholder="Name" type="text"></input>
+    <br>
+    <input placeholder="Email" type="email"></input>
+  <br>
+  <textarea rows="4" placeholder="Your Message"></textarea>
+    <br>
+  </div>
+  </div>
+</div>
+
+<div id="where">
+  <h1>How can you find us?</h1>
+  <hr>
+<div class="map" id="googlemaps">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d620.7302294978883!2d-0.14729917076677732!3d51.51466683331597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDMwJzUyLjgiTiAwwrAwOCc0OC4zIlc!5e0!3m2!1sen!2suk!4v1539546264103" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+</div>
+
+
+<hr>
+<footer>coded by Valeria Ragonese</footer>
+
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
