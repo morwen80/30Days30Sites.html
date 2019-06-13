@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+
+
+
+html, body {
+  color: #6d6161;
+  height: 100%;
+  line-height: 1.8;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.1rem;
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Main) */
+.bgimg-1 {
+   background-image: url("http://valeriaragonese.altervista.org/images/bgs/christmas01.jpg");
+    min-height: 500px;
+}
+
+
+/* Third image (The Event) */
+.bgimg-3 {
+    background-image: url("http://valeriaragonese.altervista.org/images/bgs/christmas03.jpg");
+    min-height: 550px;
+}
+
+
+
+#hello {
+  width: 99%;
+  margin: 0 auto;
+  text-align: center;
+  height: 380px;
+}
+#hello p {
+  padding-top: 7rem;
+  font-size: 4rem;
+  color: #fff;
+  line-height: 5rem;
+  font-weight: 600;
+  text-shadow: 2px 2px #6d6161;
+}
+
+
+h1 {
+  text-align: center;
+  font-family: Lora, serif;
+}
+h2 {
+  font-weight: 900;
+}
+.opening {
+  padding-top: 3rem;
+}
+.name {
+  width: 100%;
+}
+.opening img {
+  width: 250px;
+}
+#reserve {
+  color: #bc4242;
+}
+i {
+  font-size: 2rem;
+  padding: .5rem;
+}
+
+
+#book {
+  width: 95%;
+}
+
+#perks {
+  padding: 1rem 1rem;
+  text-align: center;
+}
+.desc {
+  font-size: 1.1rem;
+}
+
+/*   FORM  */
+.form {
+  width: 90%;
+  margin: 0 auto;
+/*  margin-left: 6rem; */
+  text-align: center;
+  background-color: #6d6161;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+input, textarea {
+  width: 90%;
+  margin-top: .8rem;
+  padding-left: .3rem;
+}
+
+button {
+  display: block;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/*  WHERE */
+#where hr {
+  width: 70%;
+}
+
+iframe{
+  min-height: 550px;
+  width: 100%;
+  border: 2px solid green;
+}
+
+footer {
+  text-align: center;
+  font-size: .8rem;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 600px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+    }
+}
