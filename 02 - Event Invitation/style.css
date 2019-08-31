@@ -37,7 +37,7 @@ section {
 }
 #hello p {
   padding-top: 7rem;
-  font-size: 4rem;
+  font-size: 5rem;
   color: #fff;
   line-height: 5rem;
   font-weight: 600;
@@ -130,19 +130,28 @@ footer {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-width: 600px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-        min-height: 400px;
-    }
+
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
 #hello p {
   font-size: 3.5rem;
   padding-top: 2rem;
   line-height: 4rem;
-}
-  form {
-    width: 100%;
   }
-  #form {
-    padding-top: 2rem;
+
+.speaker-img {
+  margin: 0 auto;
+}
+  .guest {
+    padding-top: 1rem;
+    text-align: center;
+  }
+form {
+  width: 100%;
+  }
+#form {
+  padding-top: 2rem;
   }
 }
