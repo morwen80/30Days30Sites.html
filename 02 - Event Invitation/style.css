@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+
+
+html, body {
+  color: #6d6161;
+  height: 100%;
+  line-height: 1.8;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.1rem;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* FIRST PARALLAX */
+.bgimg-1 {
+   background-image: url("./img/christmas01.jpg");
+    min-height: 500px;
+}
+
+#hello {
+  width: 99%;
+  margin: 0 auto;
+  text-align: center;
+  height: 380px;
+}
+#hello p {
+  padding-top: 7rem;
+  font-size: 4rem;
+  color: #fff;
+  line-height: 5rem;
+  font-weight: 600;
+  text-shadow: 2px 2px #6d6161;
+}
+
+
+/*  SECTION ABOUT */
+h1 {
+  text-align: center;
+  font-family: Lora, serif;
+}
+.opening {
+  padding-top: 3rem;
+}
+
+h2 {
+  font-weight: 900;
+}
+.opening img {
+  width: 250px;
+}
+#reserve {
+  color: #bc4242;
+}
+
+
+/* SECOND PARALLAX */
+.bgimg-3 {
+    background-image: url("./img/christmas03.jpg");
+    min-height: 550px;
+}
+
+i {
+  font-size: 2rem;
+  padding: .5rem;
+}
+
+#book {
+  width: 95%;
+}
+
+#perks {
+  padding: 1rem 1rem;
+  text-align: center;
+}
+.desc {
+  font-size: 1.1rem;
+}
+
+form {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #6d6161;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+input, textarea {
+  width: 90%;
+  margin-top: .8rem;
+  padding-left: .3rem;
+}
+
+#submit {
+  display: block;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/*  SECTION WHERE */
+#where hr {
+  width: 70%;
+}
+
+iframe{
+  min-height: 550px;
+  width: 100%;
+  border: 2px solid green;
+}
+
+/*  FOOTER */
+
+footer {
+  text-align: center;
+  font-size: .8rem;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-width: 600px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+    }
+#hello p {
+  font-size: 3.5rem;
+  padding-top: 2rem;
+  line-height: 4rem;
+}
+  form {
+    width: 100%;
+  }
+  #form {
+    padding-top: 2rem;
+  }
+}
